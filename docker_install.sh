@@ -4,7 +4,7 @@
 sudo dnf update -y
 
 # Instala as dependências necessárias
-sudo dnf install -y yum-utils
+sudo dnf install -y yum-utils curl git
 
 # Adiciona o repositório oficial do Docker
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
