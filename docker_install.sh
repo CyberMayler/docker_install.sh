@@ -33,4 +33,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # Verifica a instalação do Docker Compose
 docker-compose --version
 
+# Reinicia o Firewalld
+sudo systemctl restart firewalld
+
 echo "Docker e Docker Compose foram instalados com sucesso!"
