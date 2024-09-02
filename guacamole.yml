@@ -39,6 +39,13 @@ services:
       - postgres
     image: guacamole/guacamole
     environment:
+     #MFA 
+      TOTP_ENABLED: 'true'
+      TOTP_ISSUER: Apache Guacamole
+      TOTP_DIGITS: 6
+      TOTP_PERIOD: 30
+      TOTP_MODE: sha1
+     #Configs 
       GUACD_HOSTNAME: guacd
       POSTGRES_DATABASE: guacamole_db
       POSTGRES_HOSTNAME: postgres
